@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Poppins', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FAF3E8;
+    color: #2D1A1E;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom Gold and Maroon Utilities */
+.bg-maroon-main {
+  background-color: #7B1E3A;
+}
+
+.bg-maroon-dark {
+  background-color: #551226;
+}
+
+.bg-maroon-deep {
+  background-color: #380816;
+}
+
+.text-maroon-main {
+  color: #7B1E3A;
+}
+
+.text-gold-main {
+  color: #D4AF37;
+}
+
+.bg-gold-main {
+  background-color: #D4AF37;
+}
+
+.bg-cream-main {
+  background-color: #FAF3E8;
+}
+
+.bg-cream-card {
+  background-color: #FFFDF9;
+}
+
+.border-gold-accent {
+  border-color: rgba(212, 175, 55, 0.4);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #AA820A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #E5C158 0%, #D4AF37 50%, #B8860B 100%);
+}
+
+.maroon-gradient-bg {
+  background: linear-gradient(135deg, #7B1E3A 0%, #5B132A 60%, #3D0B1B 100%);
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF3E8;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7B1E3A;
+}
